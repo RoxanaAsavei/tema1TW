@@ -1,0 +1,142 @@
+/**
+    style rules for sectionOne
+*/
+
+.sectionOne__left div {
+    font-family: var(--font-2);
+}
+.sectionOne__left--text {
+    color: var(--color-white-75);
+    padding: 15px 0;
+}
+.sectionOne__left--note {
+    color: var(--color-white-50);
+}
+
+/* .sectionOne__left {
+    display: flex;
+    flex-direction: column;
+} */
+
+/**
+    style rules for sectionTwo
+*/
+
+.sectionTwo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.sectionTwo__left--image {
+   border-radius: 18px;
+}
+
+.sectionTwo__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sectionTwo__right--btn {
+    align-self: center;
+}
+
+.sectionTwo__right--text {
+    font-family: var(--font-2);
+    color: var(--color-blue-75);
+    font-size: var(--h5);
+}
+
+/**
+    styles for sectionThree
+*/
+
+.sectionThree {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+.sectionThree__right--image {
+    margin: auto;
+}
+
+.sectionThree__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.sectionThree__left--text {
+    font-family: var(--font-2);
+    color: var(--color-blue-75);
+    font-size: var(--h5); 
+}
+
+.sectionThree__left--btn {
+    align-self: center;
+}
+
+.sectionThree__right--image {
+    width: 400px;
+    height: 400px;
+}
+
+.sectionThree__content {
+    justify-content: space-between;
+}
+
+
+/**
+    stye rules for media queries
+*/
+
+@media (max-width: 768px) {
+    .sectionOne__right {
+        order: 0;
+    }
+    .sectionOne__left {
+        order: 1;
+    }
+
+    .sectionOne__left div {
+        text-align: center;
+    }
+    .sectionTwo__left {
+        order: 0;
+    }
+    .sectionTwo__right {
+        order: 1;
+    }
+    .sectionTwo__right {
+        align-items: center;
+    }
+
+    .sectionTwo__right div {
+        text-align: center;
+    }
+
+    .sectionThree__left div {
+        text-align: center;
+    }
+
+    .sectionThree__right {
+        order: 0;
+    }
+    .sectionThree__left {
+        order: 1;
+    }
+    .sectionThree__left {
+        align-items: center;
+    }
+}
