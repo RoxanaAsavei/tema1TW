@@ -1,0 +1,7 @@
+.sectionOne__left div {
+    font-family: var(--font-2);
+}
+.sectionOne__left--text {
+    color: var(--color-white-75);
+    padding: 15px 0;
+}

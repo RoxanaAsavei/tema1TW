@@ -1,0 +1,110 @@
+#fundal {
+    margin: 0;
+    overflow: 0;
+}
+
+#bubbleContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    opacity: 0;
+    animation: rise 10s infinite ease-in;
+}
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+}
+
+.hero1 {
+    background-color: rgb(25, 25, 112);
+}
+
+.text_bubbleContainer {
+    font-size: 80px;
+}
+
+.sectionOne{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textForm {
+    font-family: var(--font-1);
+    font-size: var(--h4);
+    margin: 10px;
+}
+
+
+.noBorder {
+    border: none;
+}
+
+#formContact {
+    width: 500px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px; 
+}
+
+.subtitlu {
+    color: var(--color-dark-100);
+    text-align: center;
+}
+
+.inputControl {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.inputControl.success input {
+    border-color: green;
+}
+
+.inputControl.error input {
+    border-color: red;
+}
+
+.inputControl input {
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.inputControl .error {
+    color:red;
+    font-size: 11px;
+    height: 13px;
+}
+
+.select {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

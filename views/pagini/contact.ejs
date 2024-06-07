@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/images/Logo/logoDark.png">
+    <link rel="stylesheet" href="src/Styles/designSystem.css">
+    <link rel="stylesheet" href="src/Styles/contact.css">
+    <script src="src/Styles/contact.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="hero1">
+        <div class="navbar container">
+            <div class="navbar__logo">
+                <img src="src/Images/Logo/logoWhite.png" alt="" class = "navbar__logo--image responsive-image">
+                <div class="navbar__logo--text">Ludo</div>
+            </div>
+            <div class="navbar__menu hidden">
+                <a href="index" class="navbar__menu--1">Home</a>
+                <a href="modes" class="navbar__menu--2">Modes</a>
+                <a href="rules" class="navbar__menu--3">Rules</a>
+                <a href="motivation" class="navbar__menu--4">Motivation</a>
+                <a href = "contact" class = navbar__menu--5>Contact</a>
+            </div>
+            <div class="navbar__icons">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x-lg hide"></i>
+            </div>
+        </div>
+
+        <div id = "bubbleContainer"> 
+            <div class="text_bubbleContainer common-title text-white">let us hear from you!</div>
+        </div>
+    </div>
+
+    <div class = "sectionOne" >
+        <div class ="container">
+        <form action="/submit" method="post" id = "formContact" class = "textForm">
+            <h1 class = "subtitlu">Contact</h1>
+            <div class = "inputControl">
+                <label for="name">First name:</label>
+                <input type="text" name = "firstName" id = "firstName" />
+                <div class = "error"></div> 
+            </div>
+
+
+            <div class = "inputControl">
+                <label for="name">Last name:</label>
+                <input type="text" name = "lastName" id = "lastName" /> 
+                <div class = "error"></div> 
+            </div>
+
+
+            <div class = "inputControl">
+                <label for="mail">Email:</label>
+                <input type="text" id = "mail" name = "user_email"/>
+                <div class = "error"></div> 
+            </div>
+
+            <div class = "inputControl">
+                <label for="message">Your thoughts:</label>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            </div>
+
+                <fieldset class = "select noBorder" required>
+                    <legend>Do you want to receive the latest news via email?</legend>
+                    <p>
+                        <input type="radio" name="option" id="aff" value="yes" required/>
+                        <label for="aff">Yes</label>
+                    </p>
+    
+                    <p>
+                        <input type="radio" name="option" id="neg" value="no" />
+                        <label for="neg">No</label>
+                    </p>
+                </fieldset>
+
+            <button type="submit" class = "dark-btn">Submit</button>
+        </form>
+        </div>
+    </div>
+
+    <div class="hero1">
+        <footer class="footer container">© Ludo, 2024. All rights reserved.</footer>
+    </div>
+
+</body>
+</html>

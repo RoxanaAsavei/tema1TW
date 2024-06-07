@@ -1,0 +1,36 @@
+#formular {
+    width: 500px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px; 
+}
+
+.subtitlu {
+    color: var(--color-dark-100);
+    text-align: center;
+}
+
+.inputControl {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.inputControl input {
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.textForm {
+    font-family: var(--font-1);
+    font-size: var(--h4);
+    margin: 10px;
+}
+
+#buton {
+    margin-top: 30px;
+}
